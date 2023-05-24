@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#9ba4b5" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <title>Time Sync</title>
+    <script
+      src="https://kit.fontawesome.com/e822fa5c46.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <ul class="menu cf">
+      <li>
+       <a href="#">Countries</a>
+      <ul class="submenu">
+      <li onclick="ind()"><a href="#">India</a></li>
+      <li onclick="usa()"><a href="#">America</a></li>
+      <li onclick="jap()"><a href="#">Japan</a></li>
+      <li onclick="fre()"><a href="#">France</a></li>
+      <li onclick="aus()"><a href="#">Australia</a></li>
+      <li onclick="rus()"><a href="#">Russia</a></li>
+      <li onclick="arg()"><a href="#">Argentina</a></li>
+      <li onclick="bang()"><a href="#">Bangladesh</a></li>
+      <li onclick="bra()"><a href="#">Brazil</a></li>
+      <li onclick="can()"><a href="#">Canada</a></li>
+      <li onclick="ger()"><a href="#">Germany</a></li>
+      <li onclick="kor()"><a href="#">South Korea</a></li>
+      <li onclick="sri()"><a href="#">Sri Lanka</a></li>
+      <li onclick="swit()"><a href="#">Switzerland</a></li>
+      <li onclick="pak()"><a href="#">Pakistan</a></li>
+      <li onclick="ita()"><a href="#">Italy</a></li>
+      <li onclick="china()"><a href="#">China</a></li>
+      <li onclick="spa()"><a href="#">Spain</a></li>
+      </ul>
+      </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="https://github.com/Zethyst?tab=repositories" target="_blank">Other Projects</a></li>
+        <li><a href="https://github.com/Zethyst" target="_blank">About</a></li>
+        <li><a href="https://www.linkedin.com/in/akshat-jaiswal-4664a2197" target="_blank">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+      <section>
+        <div class="time">
+          <!-- <h3>India</h3> -->
+          <div id="flagholder">
+            <!-- <div class="flag india">
+              <img src="/nm8Qq5m.png" width="50" alt="" class="indian__wheel" />
+            </div> -->
+          </div>
+          <br />
+          <p>Current Time: <span id="time"></span></p>
+          <button
+            type="button"
+            id="btn"
+            class="btn-hover color-8 collapsible"
+            onclick="clicked()"
+          >
+            BROWSE TIME
+          </button>
+          <div class="content">
+            <div class="flags">
+              <div class="group">
+                <div class="smallflag india" id="indian" title="India">
+                  <img src="/nm8Qq5m.png" width="15" class="indian__wheel" />
+                </div>
+                <div class="smallflag united_states" id="american" title="America">
+                  <div class="united_states__top_left">
+                    <div class="united_states__stars_col">
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                    </div>
+                    <div class="united_states__stars_col">
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                    </div>
+                    <div class="united_states__stars_col">
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                    </div>
+                    <div class="united_states__stars_col">
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                    </div>
+                    <div class="united_states__stars_col">
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                    </div>
+                    <div class="united_states__stars_col">
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                    </div>
+                    <div class="united_states__stars_col">
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                    </div>
+                    <div class="united_states__stars_col">
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                    </div>
+                    <div class="united_states__stars_col">
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                    </div>
+                    <div class="united_states__stars_col">
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                    </div>
+                    <div class="united_states__stars_col">
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                      <div class="united_states__star"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="smallflag japan" id="japanese" title="Japan"></div>
+                <div class="smallflag france" id="french" title="France"></div>
+
+                  <div class="smallflag australia" id="australian" title="Australia">
+                    <div class="australia__left__top">
+                      <div class="australia__plus">
+                        <div class="plus"></div>
+                      </div>
+                      <div class="australia__x">
+                        <div class="x__strip-1"></div>
+                        <div class="x__strip-2"></div>
+                      </div>
+                    </div>
+                    <img
+                      src="/2X2snYP.png"
+                      width="50"
+                      alt="" id="australia-star"
+                    />
+                  </div>
+
+                <div class="smallflag russia" id="russian" title="Russia"></div>
+                <div class="smallflag argentina" id="argentenian" title="Argentina">
+                  <img src="/JfNCX8z.png" width="25" class="argentina__logo" alt="argentina" />
+                </div>
+                <div class="smallflag bangladesh" id="bengali" title="Bangladesh">
+                  <div class="bangladesh__circle" style="width: 25px; height: 25px;"></div>
+                </div>
+                <div class="smallflag brazil" id="brazilian" title="Brazil">
+                  <div class="brazil__diamond"></div>
+                  <img src="/IAzj891.png" alt="Brazil" class="brazil__logo" style="width: 20px;" />
+                </div>
+                <div class="smallflag canada" id="canadian" title="Canada" >
+                  <img src="ACKqo2r.png" alt="Canada" class="canada__logo" style="width: 20px;" />
+                </div>
+                <div class="smallflag germany" id="german" title="Germany"></div>
+                <div class="smallflag south_korea" id="korean" title="South Korea">
+                  <div class="south_korea__center_circle" style="width: 20px; height: 20px;"></div>
+                
+                  <div class="south_korea__strips_1" style="width: 70px; height: 15px;">
+                    <div class="strips">
+                      <div style="width: 5px;"></div>
+                      <div style="width: 5px;"></div>
+                      <div style="width: 5px;"></div>
+                    </div>
+                    <div class="strips">
+                      <div style="width: 5px;"></div>
+                      <div style="width: 5px;"></div>
+                      <div style="width: 5px;"></div>
+                    </div>
+                  </div>
+                
+                  <div class="south_korea__strips_2" style="width: 70px; height: 15px;">
+                    <div class="strips">
+                      <div style="width: 5px;"></div>
+                      <div style="width: 5px;"></div>
+                      <div style="width: 5px;"></div>
+                    </div>
+                    <div class="strips">
+                      <div style="width: 5px;"></div>
+                      <div style="width: 5px;"></div>
+                      <div style="width: 5px;"></div>
+                    </div>
+                  </div>
+                
+                  <p class="south_korea__invisible_brick"></p>
+                  <p class="south_korea__invisible_brick"></p>
+                </div>
+
+                <div class="smallflag sri_lanka" id="lankan" title="Sri Lanka" >
+                  <div class="left__box" ></div>
+                  <img src="/lqpXtLJ.png" class="sri_lanka__logo" alt="Sri Lanka" style="width: 45px; height: 35px;" />
+                </div>
+
+                <div class="smallflag switzerland" id="switz" title="Switzerland"></div>
+                <div class="smallflag pakistan" id="pakistani" title="Pakistan"></div>
+                <div class="smallflag italy" id="italian" title="Italy"></div>
+                
+                <div class="smallflag china" id="chinese" title="China">
+                  <div class="china__star"></div>
+                  <div class="china__small_star"></div>
+                  <div class="china__small_star"></div>
+                  <div class="china__small_star"></div>
+                  <div class="china__small_star"></div>
+                </div>
+
+                <div class="smallflag spain" id="spanish" title="Spain">
+                  <img src="/g1E7616.png" width="16" alt="Spain" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <aside>
+        <div class="theme-switch">
+          <div class="switch"></div>
+    </aside>
+    <footer>
+      <a href="https://www.facebook.com/ekansh.jaiswal.796" target="_blank">
+        <i class="fab fa-facebook-f icon"></i
+        ></a>
+      <a href="https://www.instagram.com/scyp77/" target="_blank"
+      ><i class="fab fa-instagram"></i
+    ></a>
+    <a
+    href="https://www.linkedin.com/in/akshat-jaiswal-4664a2197"
+    target="_blank"
+    ><i class="fab fa-linkedin-in icon"></i
+  ></a>
+    <a href="https://twitter.com/_TheColdSmoker_" target="_blank"
+      ><i class="fab fa-twitter"></i
+    ></a>
+    <a href="https://t.snapchat.com/Av5lUfEK" target="_blank"
+    ><i class="fab fa-snapchat icon"></i
+  ></a>
+  </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
