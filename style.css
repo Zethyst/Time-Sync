@@ -859,7 +859,25 @@ a:nth-child(5):hover {
   transform: translateX(37px);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
+    .menu > li {
+        width: 200px;
+    }
+    .menu a{
+        font-size: 11px;
+    }
+
+}
+@media screen and (max-width: 1070px) {
+    .menu > li {
+        width: 150px;
+    }
+    .menu a{
+        font-size: 8px;
+    }
+
+}
+@media screen and (max-width: 900px) {
   nav {
     display: none;
   }
