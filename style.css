@@ -214,6 +214,8 @@ section p {
   justify-content: center;
   width: 100%;
   height: 100%;
+  transition: 0.5s all ease;
+  transition: height 0.4s linear;
 }
 .smallflag {
   position: relative;
@@ -694,6 +696,8 @@ section p {
   border-radius: 10px;
   box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.12);
   transition: 0.5s background ease;
+  transition: 0.5s all ease;
+  transition: height 0.4s linear;
 }
 .content {
   padding: 5px 18px;
@@ -706,6 +710,8 @@ section p {
   height: auto;
   border-radius: 40px;
   transition: 0.5s background ease;
+  transition: 0.5s all ease;
+  transition: height 0.4s linear;
 }
 * {
   -webkit-box-sizing: border-box;
