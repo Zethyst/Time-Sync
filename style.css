@@ -4,6 +4,10 @@
   font-family: Infinity;
   src: url(/Fonts/MADEINFINITY\ PERSONALUSE-Regular.otf);
 }
+@font-face {
+  font-family: InfinityBold;
+  src: url(/Fonts/MADEINFINITY\ PERSONALUSE-Medium.otf);
+}
 :root {
   --background: #333;
   --text: #fff;
@@ -192,6 +196,12 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   transition: 0.5s background ease;
+}
+section h3{
+    font-family: InfinityBold;
+    letter-spacing: 10px;
+    margin: 20px auto;
+    text-transform: uppercase;
 }
 section p {
   font-family: Infinity;
