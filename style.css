@@ -894,8 +894,8 @@ a:nth-child(5):hover {
     height: 25px;
   }
   .theme-switch > .switch {
-    width: 18px;
-    height: 18px;
+    width: 19px;
+    height: 19px;
   }
   .dark-theme > .theme-switch > .switch {
     transform: translateX(27px);
