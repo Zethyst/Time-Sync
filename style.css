@@ -890,12 +890,12 @@ a:nth-child(5):hover {
     width: 100%;
   }
   .theme-switch {
-    width: 50px;
-    height: 20px;
+    width: 55px;
+    height: 25px;
   }
   .theme-switch > .switch {
-    width: 14px;
-    height: 14px;
+    width: 18px;
+    height: 18px;
   }
   .dark-theme > .theme-switch > .switch {
     transform: translateX(27px);
